@@ -19,7 +19,7 @@ SELECT * FROM orders WHERE SUM>=3200 ORDER BY DATE DESC LIMIT 3;
 
 ![image](https://github.com/user-attachments/assets/d0ec4f7b-ea11-4197-b5be-0628c77731de)
 
-4)Создайте данную таблицу:
+4) Создайте данную таблицу:
 
 CREATE TABLE products (id INT, NAME VARCHAR (50), COUNT INT, price INT);
 INSERT INTO products (id, NAME, COUNT, price)
@@ -43,7 +43,7 @@ VALUE (1, 'Стиральная машина', 5, 10000),
 
 ![image](https://github.com/user-attachments/assets/c82c180f-f94c-467b-8d67-745f8bb23030)
 
-5)Из этой таблицы сделать выборку на основе задания: Сайт выводит товары по 5 штук. Выберите из таблицы products товары, которые пользователи увидят на 3 странице каталога при сортировке в порядке возрастания цены (price).
+5) Из этой таблицы сделать выборку на основе задания: Сайт выводит товары по 5 штук. Выберите из таблицы products товары, которые пользователи увидят на 3 странице каталога при сортировке в порядке возрастания цены (price).
 
 SELECT * FROM products ORDER BY price LIMIT 5 OFFSET 10;
 
