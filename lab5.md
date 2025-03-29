@@ -43,4 +43,10 @@ VALUE (1, 'Стиральная машина', 5, 10000),
 
 ![image](https://github.com/user-attachments/assets/c82c180f-f94c-467b-8d67-745f8bb23030)
 
+5)Из этой таблицы сделать выборку на основе задания: Сайт выводит товары по 5 штук. Выберите из таблицы products товары, которые пользователи увидят на 3 странице каталога при сортировке в порядке возрастания цены (price).
+
+SELECT * FROM products ORDER BY price LIMIT 5 OFFSET 10;
+
+![image](https://github.com/user-attachments/assets/dba2d832-abc0-44a8-bf81-ab45de48ffb4)
+
 
