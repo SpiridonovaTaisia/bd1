@@ -29,15 +29,17 @@ is_active — отметка об активности пользователя.
 is_superuser — отметка администратора. Логическое поле, по умолчанию FALSE.
 Добавьте 3 записи так, чтобы получалась таблица ниже:
 
-CREATE table users (id INT UNSIGNED, first_name VARCHAR(20) NOT NULL,
- last_name VARCHAR(20) NOT NULL, patronymic VARCHAR(20) NOT NULL DEFAULT '',
-is_active BOOLEAN DEFAULT TRUE, is_superuser BOOLEAN DEFAULT FALSE);
-INSERT INTO users (id, first_name, last_name, patronymic, is_active, is_superuser)
-VALUES (1, 'Дмитрий', 'Иванов', DEFAULT, DEFAULT, DEFAULT),
-(2, 'Анатолий', 'Белый', 'Сергеевич', DEFAULT, DEFAULT),
+CREATE table users (id INT UNSIGNED, first_name VARCHAR(20) NOT NULL, last_name 
+VARCHAR(20) NOT NULL, patronymic VARCHAR(20) NOT NULL DEFAULT '',
+ is_active BOOLEAN DEFAULT TRUE, is_superuser BOOLEAN DEFAULT FALSE);
+ INSERT INTO users (id, first_name, last_name, patronymic, is_active, is_superuser)
+ VALUES (1, 'Дмитрий', 'Иванов', DEFAULT, DEFAULT, DEFAULT), 
+(2, 'Анатолий', 'Белый', 'Сергеевич', DEFAULT, TRUE), 
 (3, 'Андрей', 'Крючков', DEFAULT, FALSE, DEFAULT);
+SELECT * FROM users;
 
-![image](https://github.com/user-attachments/assets/11578718-b318-4394-a138-aed0b022adb3)
+![image](https://github.com/user-attachments/assets/78fa6624-3e2a-479f-b1f0-e79deaf5f1ba)
+
 
 
 3)Создайте таблицу products для хранения товаров в интернет магазине:
